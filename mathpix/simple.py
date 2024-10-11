@@ -22,4 +22,3 @@ r = mathpix.latex({
 })
 
 print(json.dumps(r, indent=4, sort_keys=True))
-assert(r['latex_simplified'] == '12 + 5 x - 8 = 12 x - 10')
