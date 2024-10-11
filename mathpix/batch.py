@@ -37,7 +37,7 @@ body = {'urls': urls, 'formats': ['latex_normal']}
 start = time.time()
 r = requests.post(server + '/v3/batch', headers=headers, data=json.dumps(body))
 info = json.loads(r.text)
-print info
+
 b = info['batch_id']
 print("Batch id is %s" % b)
 
